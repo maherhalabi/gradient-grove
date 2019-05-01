@@ -1,11 +1,16 @@
+var body = document.getElementById("gradient");
+var hexColorOne = document.querySelectorAll("h3")[0];
+var hexColorTwo = document.querySelectorAll("h3")[1];
+
 var firstColor = document.getElementById("firstColor");
 var secondColor = document.getElementById("secondColor");
-var hexColor = document.getElementById("gradient");
 
-firstColor.addEventListener("input", function() {
-    hexColor.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
-});
+function setGradient() {
+    body.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
+    hexColorOne.textContent = firstColor.value;
+    hexColorTwo.textContent = secondColor.value;
+}
 
-secondColor.addEventListener("input", function() {
-    console.log(secondColor.value);
-});
+firstColor.addEventListener("input", setGradient);
+secondColor.addEventListener("input", setGradient);
+
