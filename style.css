@@ -1,3 +1,43 @@
-body {
-    background-image: linear-gradient(to right, white, white);
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.gradient {
+    text-align: center;
+    height: 100%;
+}
+
+.hexCodeAlignment {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant Unicase', serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.arrowSeperatingHexCode {
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+
+.websiteTitle {
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+.squareBox {
+    height: 10px;
+    width: 10px;
+    border: solid 2px;
+    background: white;
 }
