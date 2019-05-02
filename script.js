@@ -1,6 +1,6 @@
-var body = document.getElementById("gradient");
-var hexColorOne = document.querySelectorAll("h3")[0];
-var hexColorTwo = document.querySelectorAll("h3")[1];
+var body = document.querySelector(".gradient");
+var hexColorOne = document.getElementById("DisplayHexCodeOne");
+var hexColorTwo = document.getElementById("DisplayHexCodeTwo");
 
 var firstColor = document.getElementById("firstColor");
 var secondColor = document.getElementById("secondColor");
