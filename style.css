@@ -7,8 +7,8 @@ html, body {
 }
 
 h1, h2, h3 {
-    margin: 10px;
     padding: 0;
+    margin: 0;
 }
 
 .gradient {
@@ -16,7 +16,7 @@ h1, h2, h3 {
     height: 100%;
 }
 
-.header {
+.hexCodeAlignment {
     display: flex;
     justify-content: center;
     font-family: 'Cormorant Unicase', serif;
@@ -25,4 +25,8 @@ h1, h2, h3 {
 .arrowSeperatingHexCode {
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.websiteTitle {
+    text-align: center;
 }
