@@ -20,13 +20,24 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     font-family: 'Cormorant Unicase', serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .arrowSeperatingHexCode {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 3px;
 }
 
 .websiteTitle {
     text-align: center;
+    letter-spacing: 15px;
+}
+
+.squareBox {
+    height: 10px;
+    width: 10px;
+    border: solid 2px;
+    background: white;
 }
