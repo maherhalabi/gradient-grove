@@ -26,6 +26,9 @@ h1, h2, h3 {
     font-family: 'Cormorant Unicase', serif;
     letter-spacing: 3px;
     margin-bottom: 10px;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .arrowSeperatingHexCode {
@@ -35,9 +38,15 @@ h1, h2, h3 {
 }
 
 .websiteTitle {
-    text-align: center;
-    letter-spacing: 15px;
-    font-family: 'Homemade Apple', cursive;
+    font-size: 40px;
+    margin: 0px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: min-content;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .squareBox {
