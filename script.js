@@ -1,4 +1,6 @@
 
+//Add value that displays a certain hex code when website first launches
+
 var hexColorOne = document.getElementById("DisplayHexCodeOne");
 var hexColorTwo = document.getElementById("DisplayHexCodeTwo");
 
