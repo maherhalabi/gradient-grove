@@ -20,28 +20,6 @@ h1, h2, h3 {
     z-index: 10;
 }
 
-
-section {
-    display: ruby-base-container;
-}
-
-.hexCodeAlignment {
-    display: flex;
-    justify-content: center;
-    font-family: 'Cormorant Unicase', serif;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.arrowSeperatingHexCode {
-    margin-right: 6px;
-    margin-left: 6px;
-    margin-top: 0px;
-}
-
 .websiteTitle {
     font-size: 40px;
     margin: 0px;
@@ -54,31 +32,41 @@ section {
     margin-bottom: 10px;
 }
 
+.actionBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 .squareBox {
     height: 10px;
     width: 10px;
     margin: 3px;
 }
 
+.arrowSeperatingHexCode {
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-top: 0px;
+}
+
 .actionBarButtons {
-    display: inline-block;
-    background-color:yellow;
+    background: transparent;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Julius Sans One', sans-serif;
     text-align: center;
-    transition: all 0.5s;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
     cursor: pointer;
-
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
-.actionBarButtons span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+.actionBarButtons:hover {
+    background-color: #f0f0f0;
 }
 
-.actionBar {
-    display: flex;
-    justify-content: center;
-}
