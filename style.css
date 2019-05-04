@@ -20,6 +20,11 @@ h1, h2, h3 {
     z-index: 10;
 }
 
+
+section {
+    display: ruby-base-container;
+}
+
 .hexCodeAlignment {
     display: flex;
     justify-content: center;
@@ -53,4 +58,27 @@ h1, h2, h3 {
     height: 10px;
     width: 10px;
     margin: 3px;
+}
+
+.actionBarButtons {
+    display: inline-block;
+    background-color:yellow;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.actionBarButtons span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.actionBar {
+    display: flex;
+    justify-content: center;
 }
