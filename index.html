@@ -13,16 +13,22 @@
         </header>
         <section class="actionBar">
 
-                <button id="gradientStyleChoiceButton" class="actionBarButtons">Gradient Types</button>
-                <input id="firstColor" type="color" >
+                <button id="gradientStyleChoiceButton" class="dropDownTitle">Gradient Types</button>
                 <span class="squareBox" id="displayColorBoxOne"></span>
                 <span id="DisplayHexCodeOne"></span>
                 <i class="far fa-hand-point-right arrowSeperatingHexCode"></i>
                 <span id="DisplayHexCodeTwo"></span>
                 <span class="squareBox" id="displayColorBoxTwo"></span>
-                <input id="secondColor" type="color">
-                <button id="colorChoiceButton" class="actionBarButtons">Color change</button>
-
+                    
+                <div class="dropDown">
+                    <button class="dropDownTitle" id="colorButton"> Color Choice </button>
+                    <div class="dropDownMenu">
+                        <div class="dropDownContents"> First Color </div>
+                        <div class="dropDownContents"> Second Color </div>
+                        <input id="firstColor" type="color">
+                        <input id="secondColor" type="color">
+                    </div>
+                </div>
         </section>
         <div class="gradient">
         </div>

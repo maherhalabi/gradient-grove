@@ -1,4 +1,3 @@
-
 //Add value that displays a certain hex code when website first launches
 
 var hexColorOne = document.getElementById("DisplayHexCodeOne");
@@ -20,6 +19,12 @@ function setGradient() {
     body.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
 }
 
+var dropDownMenu = document.querySelector(".dropDownMenu");
+
+function dropDownMenuToggle() {
+    dropDownMenu.classList.toggle("show");
+}
+
 var colorBoxOne = document.getElementById("displayColorBoxOne")
 var colorBoxTwo = document.getElementById("displayColorBoxTwo")
 
@@ -33,3 +38,5 @@ secondColor.addEventListener("input", function() {
     colorBoxTwo.style.background = secondColor.value;
 });
 
+var colorButton = document.getElementById("colorButton");
+colorButton.addEventListener("click", dropDownMenuToggle);
