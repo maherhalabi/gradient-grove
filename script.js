@@ -19,12 +19,6 @@ function setGradient() {
     body.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
 }
 
-var dropDownMenu = document.querySelector(".dropDownMenu");
-
-function dropDownMenuToggle() {
-    dropDownMenu.classList.toggle("show");
-}
-
 var colorBoxOne = document.getElementById("displayColorBoxOne")
 var colorBoxTwo = document.getElementById("displayColorBoxTwo")
 
@@ -38,5 +32,20 @@ secondColor.addEventListener("input", function() {
     colorBoxTwo.style.background = secondColor.value;
 });
 
+var dropDownGradientMenu = document.querySelector(".dropDownGradient");
+var dropDownColorsMenu = document.querySelector(".dropDownColors");
 var colorButton = document.getElementById("colorButton");
-colorButton.addEventListener("click", dropDownMenuToggle);
+var gradientButton = document.getElementById("gradientButton");
+
+function dropDownColorToggle() {
+    dropDownColorsMenu.classList.toggle("show");
+}
+
+function dropDownGradientToggle() {
+    dropDownGradientMenu.classList.toggle("show");
+}
+
+
+
+colorButton.addEventListener("click", dropDownColorToggle);
+gradientButton.addEventListener("click", dropDownGradientToggle);
