@@ -3,6 +3,7 @@
     <head>
         <title> mohur/gradient </title>
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
@@ -10,16 +11,31 @@
         <header class="header">
             <h4 class="websiteTitle"> Gradient </h4>
         </header>
-        <section class="actionbar">
-            <div class="hexCodeAlignment">
-                <input id="firstColor" type="color" >
+        <section class="actionBar">
+            <div class="dropDown">
+                <button class="dropDownTitle" id="gradientButton">Gradient Types</button>
+                <div class="dropDownGradient">
+                    <div class="dropDownContents"> Gradient One </div>
+                    <div class="dropDownContents"> Gradient Two </div>
+                </div>
+
+            </div>
                 <span class="squareBox" id="displayColorBoxOne"></span>
                 <span id="DisplayHexCodeOne"></span>
                 <i class="far fa-hand-point-right arrowSeperatingHexCode"></i>
                 <span id="DisplayHexCodeTwo"></span>
                 <span class="squareBox" id="displayColorBoxTwo"></span>
-                <input id="secondColor" type="color">
             </div>
+
+                <div class="dropDown">
+                    <button class="dropDownTitle" id="colorButton">Color Choice</button>
+                    <div class="dropDownColors">
+                        <div class="dropDownContents"> First Color </div>
+                        <div class="dropDownContents"> Second Color </div>
+                        <input id="firstColor" type="color">
+                        <input id="secondColor" type="color">
+                    </div>
+                </div>
         </section>
         <div class="gradient">
         </div>
