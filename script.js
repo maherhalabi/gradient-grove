@@ -22,7 +22,10 @@ function setGradient() {
 var colorBoxOne = document.getElementById("displayColorBoxOne")
 var colorBoxTwo = document.getElementById("displayColorBoxTwo")
 
-firstColor.addEventListener("input", function() {
+var firstColorList = document.querySelector("#firstColorButton");
+var SecondColorList = document.querySelector("#SecondColorButton");
+
+firstColor.addEventListener("input", function(event) {
     setGradient();
     colorBoxOne.style.background = firstColor.value;
 });
@@ -37,15 +40,13 @@ var dropDownColorsMenu = document.querySelector(".dropDownColors");
 var colorButton = document.getElementById("colorButton");
 var gradientButton = document.getElementById("gradientButton");
 
-function dropDownColorToggle() {
-    dropDownColorsMenu.classList.toggle("show");
-}
+function menuListToggle(menuName) {
+    menuName.classList.toggle("show");
+    }
 
-function dropDownGradientToggle() {
-    dropDownGradientMenu.classList.toggle("show");
-}
-
-
-
-colorButton.addEventListener("click", dropDownColorToggle);
-gradientButton.addEventListener("click", dropDownGradientToggle);
+colorButton.addEventListener("click", function() {
+    menuListToggle(dropDownColorsMenu);
+});
+gradientButton.addEventListener("click", function() {
+    menuListToggle(dropDownGradientMenu);
+});
