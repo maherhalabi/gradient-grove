@@ -52,10 +52,12 @@ h1, h2, h3 {
 
 .dropDown {
     position: relative;
+    
 }
 
 .dropDown > .dropDownTitle {
     display: inline-block;
+    
 }
 
 .dropDownTitle {
@@ -73,6 +75,7 @@ h1, h2, h3 {
     margin-right: 8px;
     margin-left: 8px;
     display: inline-block;
+    
 }
 
 .dropDownTitle:hover {
@@ -88,6 +91,8 @@ h1, h2, h3 {
     padding: 13px 13px;
     text-align: center;
     border: solid #d0d0d0;
+    border-radius: 10px;
+
 }
 
 .dropDownContents {
@@ -99,4 +104,7 @@ h1, h2, h3 {
 }
 .show {
     display: block;
+}
+.hide {
+    display: none;
 }
