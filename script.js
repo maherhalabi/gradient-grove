@@ -42,11 +42,20 @@ var gradientButton = document.getElementById("gradientButton");
 
 function menuListToggle(menuName) {
     menuName.classList.toggle("show");
+
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropDownTitle')) {
+          if (menuName.classList.contains('show')) {
+            menuName.classList.remove('show');
+          }
+        }
     }
+} 
 
 colorButton.addEventListener("click", function() {
     menuListToggle(dropDownColorsMenu);
 });
+
 gradientButton.addEventListener("click", function() {
     menuListToggle(dropDownGradientMenu);
 });
