@@ -11,34 +11,47 @@
         <header class="header">
             <h4 class="websiteTitle"> Gradient </h4>
         </header>
-        <section class="actionBar">
-            <div class="dropDown">
-                <button class="dropDownTitle" id="gradientButton">Gradient Types</button>
-                <div class="dropDownGradient">
-                    <div class="dropDownContents" id="gradientOne"> Gradient One </div>
-                    <div class="dropDownContents" id="gradientTwo"> Gradient Two </div>
-                    <div class="dropDownContents" id="gradientThree"> Gradient Three </div>
-                    <div class="dropDownContents" id="gradientFour"> Gradient Four </div>
+        <div id="navBar">
+            
+            <section class="centralNavBar">
+                <div class="dropDown">
+                    <button class="dropDownTitle" id="gradientButton">Gradient Types</button>
+                    <div class="dropDownGradient">
+                        <div class="dropDownContents" id="gradientOne"> Gradient One </div>
+                        <div class="dropDownContents" id="gradientTwo"> Gradient Two </div>
+                        <div class="dropDownContents" id="gradientThree"> Gradient Three </div>
+                        <div class="dropDownContents" id="gradientFour"> Gradient Four </div>
+                    </div>
                 </div>
 
-            </div>
-                <span class="squareBox" id="displayColorBoxOne"></span>
-                <span id="DisplayHexCodeOne"></span>
-                <i class="far fa-hand-point-right arrowSeperatingHexCode"></i>
-                <span id="DisplayHexCodeTwo"></span>
-                <span class="squareBox" id="displayColorBoxTwo"></span>
-            </div>
+                <div>
+                    <span class="squareBox" id="displayColorBoxOne"></span>
+                    <span id="DisplayHexCodeOne"></span>
+                    <i class="far fa-hand-point-right arrowSeperatingHexCode"></i>
+                    <span id="DisplayHexCodeTwo"></span>
+                    <span class="squareBox" id="displayColorBoxTwo"></span>
+                </div>
 
                 <div class="dropDown">
                     <button class="dropDownTitle" id="colorButton">Color Choice</button>
-                    <div class="dropDownColors">
-                        <div class="dropDownContents" id="firstColorButton"> First Color</div>
-                        <div class="dropDownContents"> Second Color </div>
-                        <input id="firstColor" type="color">
-                        <input id="secondColor" type="color">
-                    </div>
+                        <div class="dropDownColors">
+                            <div class="dropDownContents" id="firstColorButton"> First Color</div>
+                            <div class="dropDownContents"> Second Color </div>
+                            <input id="firstColor" type="color">
+                            <input id="secondColor" type="color">
+                        </div>
                 </div>
-        </section>
+            </section>
+            
+            <section id="rightSideNavBar">
+                <button id="copyCSSValueButton"><i class="far fa-save"></i></button>
+            </section>
+
+        </div
+
+
+
+
         <div class="gradient">
         </div>
         <script type="text/javascript" src="script.js"></script>

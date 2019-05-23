@@ -10,6 +10,7 @@ var secondColor = document.getElementById("secondColor");
 function displayHexColorInfo () {
     hexColorOne.textContent = firstColor.value;
     hexColorTwo.textContent = secondColor.value;
+    
 }
 
 var body = document.querySelector(".gradient");
@@ -25,7 +26,7 @@ var colorBoxTwo = document.getElementById("displayColorBoxTwo")
 var firstColorList = document.querySelector("#firstColorButton");
 var SecondColorList = document.querySelector("#SecondColorButton");
 
-firstColor.addEventListener("input", function(event) {
+firstColor.addEventListener("input", function() {
     setGradient();
     colorBoxOne.style.background = firstColor.value;
 });
@@ -88,4 +89,12 @@ gradientStyleFour.addEventListener("click", function() {
     body.style.background = "linear-gradient(to top, " + firstColor.value + ", " + secondColor.value + ")";
 });
     
+var getCSSValues = document.getElementById("copyCSSValueButton");
 
+getCSSValues.addEventListener("click", function() {
+    if(confirm("press a button")){
+        txt = "You pressed OK!";
+    } else {
+      txt = "You pressed Cancel!";
+    }
+});

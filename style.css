@@ -1,6 +1,5 @@
 
 html, body {
-    height: 100%;
     padding: 0;
     margin: 0;
     font-family: 'Cormorant Unicase', serif;
@@ -32,10 +31,15 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
-.actionBar {
+#navBar {
+    display: flex;
+}
+
+.centralNavBar {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    flex: 1;
+    margin-left: 80px;
 }
 
 .squareBox {
@@ -48,11 +52,6 @@ h1, h2, h3 {
     margin-right: 6px;
     margin-left: 6px;
     margin-top: 0px;
-}
-
-.dropDown {
-    position: relative;
-    
 }
 
 .dropDown > .dropDownTitle {
@@ -102,6 +101,15 @@ h1, h2, h3 {
 .dropDownContents:hover {
     background-color: #d0d0d0;;
 }
+
+#copyCSSValueButton {
+    position: flex;
+    float: right;
+    z-index: 2;
+    margin-right: 30px;
+}
+
+
 .show {
     display: block;
 }
