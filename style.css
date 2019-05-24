@@ -1,7 +1,5 @@
 
 html, body {
-    padding: 0;
-    margin: 0;
     font-family: 'Cormorant Unicase', serif;
 }
 
@@ -33,20 +31,18 @@ h1, h2, h3 {
 
 #navBar {
     display: flex;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #d0d0d0;
+    height: 30px;
 }
 
 .centralNavBar {
     display: flex;
     justify-content: center;
     flex: 1;
-    margin-left: 80px;
+    position: relative;
 }
 
-.squareBox {
-    height: 10px;
-    width: 10px;
-    margin: 3px;
-}
 
 .arrowSeperatingHexCode {
     margin-right: 6px;
@@ -62,23 +58,22 @@ h1, h2, h3 {
 .dropDownTitle {
     background: transparent;
     color: black;
-    border-radius: 10px;
     border: none;
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
+    font-size: small;
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 8px;
-    margin-left: 8px;
-    display: inline-block;
+    min-width: 100%;
     
 }
 
 .dropDownTitle:hover {
     background: #d0d0d0;
+
 }
 
 .dropDownColors, .dropDownGradient {
@@ -96,6 +91,7 @@ h1, h2, h3 {
 
 .dropDownContents {
     transition-duration: 0.7s;
+    width: 100px;
 }
 
 .dropDownContents:hover {
@@ -103,10 +99,8 @@ h1, h2, h3 {
 }
 
 #copyCSSValueButton {
-    position: flex;
-    float: right;
-    z-index: 2;
-    margin-right: 30px;
+    position: absolute;
+    right: 38px;
 }
 
 

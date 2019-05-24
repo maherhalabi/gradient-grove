@@ -10,7 +10,9 @@ var secondColor = document.getElementById("secondColor");
 function displayHexColorInfo () {
     hexColorOne.textContent = firstColor.value;
     hexColorTwo.textContent = secondColor.value;
-    
+
+    hexColorOne.style.background = firstColor.value;
+    hexColorTwo.style.background = secondColor.value;
 }
 
 var body = document.querySelector(".gradient");
@@ -20,20 +22,15 @@ function setGradient() {
     body.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
 }
 
-var colorBoxOne = document.getElementById("displayColorBoxOne")
-var colorBoxTwo = document.getElementById("displayColorBoxTwo")
-
 var firstColorList = document.querySelector("#firstColorButton");
-var SecondColorList = document.querySelector("#SecondColorButton");
+var SecondColorList = document.querySelector("#secondColorButton");
 
 firstColor.addEventListener("input", function() {
     setGradient();
-    colorBoxOne.style.background = firstColor.value;
 });
 
 secondColor.addEventListener("input", function() {
     setGradient();
-    colorBoxTwo.style.background = secondColor.value;
 });
 
 var dropDownGradientMenu = document.querySelector(".dropDownGradient");
@@ -91,6 +88,7 @@ gradientStyleFour.addEventListener("click", function() {
     
 var getCSSValues = document.getElementById("copyCSSValueButton");
 
+//function for saving CSS values NOT READY - Only testing
 getCSSValues.addEventListener("click", function() {
     if(confirm("press a button")){
         txt = "You pressed OK!";
