@@ -32,7 +32,7 @@ h1, h2, h3 {
 #navBar {
     display: flex;
     padding-bottom: 10px;
-    border-bottom: 4px solid #d0d0d0;
+    border-bottom: 9px groove #d0d0d0;
     height: 30px;
 }
 
@@ -48,6 +48,11 @@ h1, h2, h3 {
     margin-right: 6px;
     margin-left: 6px;
     margin-top: 0px;
+}
+
+.hexCode {
+    mix-blend-mode: difference;
+    color:white;
 }
 
 .dropDown > .dropDownTitle {
@@ -101,6 +106,7 @@ h1, h2, h3 {
 #copyCSSValueButton {
     position: absolute;
     right: 38px;
+    margin-top: 2px;
 }
 
 
