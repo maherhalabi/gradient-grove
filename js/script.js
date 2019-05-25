@@ -7,7 +7,6 @@ var firstColor = document.getElementById("firstColor");
 var secondColor = document.getElementById("secondColor");
 
 function displayHexColorInfo () {
-    
     hexColorOne.textContent = firstColor.value;
     hexColorTwo.textContent = secondColor.value;
 
@@ -20,6 +19,10 @@ var body = document.querySelector(".gradient");
 function setGradient() {
     displayHexColorInfo();
     body.style.background = "linear-gradient(to right, " + firstColor.value + ", " + secondColor.value + ")";
+    
+    //text color of hex code display adapts to background for better visibility
+    hexColorOne.style.color = contrast(firstColor.value);
+    hexColorTwo.style.color = contrast(secondColor.value);
 }
 
 var firstColorList = document.querySelector("#firstColorButton");
