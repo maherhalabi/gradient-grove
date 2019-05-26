@@ -31,16 +31,19 @@ h1, h2, h3 {
 
 #navBar {
     display: flex;
+    justify-content: center;
     padding-bottom: 5px;
     border-bottom: 3px solid #d0d0d0;
     height: 30px;
 }
 
+#rightSideNavBar {
+    position: absolute;
+    right: 40px;
+}
+
 .centralNavBar {
     display: flex;
-    justify-content: center;
-    flex: 1;
-    position: relative;
 }
 
 .fas {
@@ -82,7 +85,7 @@ h1, h2, h3 {
 
 }
 
-.dropDownColors, .dropDownGradient {
+.dropDownColors, .dropDownGradient, .dropDownRotation {
     display: none;
     z-index: 100;
     position: absolute;
@@ -109,6 +112,20 @@ h1, h2, h3 {
     position: absolute;
     right: 38px;
     margin-top: 2px;
+    right: -30px;
+}
+
+#rotateGradient {
+    right: 10px;
+    position: absolute;
+    top: 1px;
+}
+
+#dragAndDropRotation {
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: solid 2px black;
 }
 
 
@@ -120,7 +137,7 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 560px) {
-    #copyCSSValueButton {
+    #rightSideNavBar {
         display: none;
     }
 
