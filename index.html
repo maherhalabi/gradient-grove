@@ -10,12 +10,13 @@
     </head>
     <body>
         <header class="header">
-            <h4 class="websiteTitle"> Gradient </h4>
+            <div class="websiteTitle"> Gradient </div>
         </header>
         <div id="navBar">
+            <div  id="osmansSpace" style="visibility: hidden">HAKCED</div>
             
-            <section class="centralNavBar">
-                <div class="dropDown">
+            <ul class="centralNavBar">
+                <li class="dropDown">
                     <button class="dropDownTitle" id="gradientButton">Gradient Types</button>
                     <div class="dropDownGradient">
                         <div class="dropDownContents" id="gradientOne"> Gradient One </div>
@@ -23,33 +24,35 @@
                         <div class="dropDownContents" id="gradientThree"> Gradient Three </div>
                         <div class="dropDownContents" id="gradientFour"> Gradient Four </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="midCentralNavBar">
+                <li class="midCentralNavBar">
                     <span id="DisplayHexCodeOne" class="hexCode"></span>
-                    <i class="fas fa-arrows-alt-h arrowSeperatingHexCode"></i>
+                    <span><i class="fas fa-arrows-alt-h arrowSeperatingHexCode"></i></span>
                     <span id="DisplayHexCodeTwo" class="hexCode"></span>
-                </div>
+                </li>
 
-                <div class="dropDown">
+                <li class="dropDown">
                     <button class="dropDownTitle" id="colorButton">Color Choice</button>
                         <div class="dropDownColors">
                                 <div class="dropDownContents" id="firstColorButton">First Color<input id="firstColor" type="color"></div>
                                 <div class="dropDownContents" id="secondColorButton">Second Color<input id="secondColor" type="color"></div>
                         </div>
-                </div>
-            </section>
+                </li>
+            </ul>
             
-            <section id="rightSideNavBar">
-                <button id="copyCSSValueButton"><i class="far fa-save"></i></button>
+            <div class="rightSideNavBar">
+                <div>
+                    <button id="copyCSSValueButton"><i class="far fa-save"></i></button>
+                </div>
                 
                 <div class="dropDown">
                     <button class="dropDownTitle" id="rotateGradient"><i class="fas fa-undo"></i></button>
                         <div class="dropDownRotation">
                             <div class="dropDownContents" id="dragAndDropRotation"></div>
                         </div>
-                </div>
-            </section>
+                    </div>
+            </div>
         </div>
 
         <div class="gradient">

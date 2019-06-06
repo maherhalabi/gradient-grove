@@ -19,31 +19,30 @@ h1, h2, h3 {
 
 .websiteTitle {
     font-size: 40px;
-    margin: 0px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: min-content;
     font-family: 'Great Vibes', cursive;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #navBar {
-    display: flex;
-    justify-content: center;
     padding-bottom: 5px;
     border-bottom: 3px solid #d0d0d0;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#rightSideNavBar {
-    position: absolute;
-    right: 40px;
+.rightSideNavBar {
+    display: flex;
+    list-style-type: none;
 }
 
 .centralNavBar {
     display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .fas {
@@ -58,10 +57,10 @@ h1, h2, h3 {
     font-family: 'Yantramanav', sans-serif;
 }
 
-.dropDown > .dropDownTitle {
+/* .dropDown > .dropDownTitle {
     display: inline-block;
     
-}
+} */
 
 .dropDownTitle {
     background: transparent;
@@ -102,23 +101,11 @@ h1, h2, h3 {
     transition-duration: 0.7s;
     width: 100px;
     font-family: 'Yantramanav', sans-serif;
+    position: relative;
 }
 
 .dropDownContents:hover {
     background-color: #d0d0d0;;
-}
-
-#copyCSSValueButton {
-    position: absolute;
-    right: 38px;
-    margin-top: 2px;
-    right: -30px;
-}
-
-#rotateGradient {
-    right: 10px;
-    position: absolute;
-    top: 1px;
 }
 
 #dragAndDropRotation {
@@ -137,7 +124,7 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 560px) {
-    #rightSideNavBar {
+    .rightSideNavBar {
         display: none;
     }
 
@@ -145,12 +132,17 @@ h1, h2, h3 {
         flex-direction: column;
     }
 
-    #navBar {
-        height: 50px;
+    .midCenterNavBar {
+        display: flex;
+        justify-content: center;
     }
 
-    .midCentralNavBar {
-        margin-left: auto;
-        margin-right: auto;
+    #navBar {
+        height: 50px;
+        justify-content: center;
+    }
+
+    #osmansSpace {
+        display: none;
     }
 }
